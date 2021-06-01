@@ -41,6 +41,7 @@
 
 #include "stm32_uart.h"
 #include <nuttx/cache.h>
+#include <syslog.h>
 
 /* serial register accessors */
 #define REG(_x)		(*(volatile uint32_t *)(PX4IO_SERIAL_BASE + (_x)))
